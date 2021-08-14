@@ -7,7 +7,7 @@
 ## Find in dist folder  
 
 ### setting can be changed in config.yaml  
-from: from Directory full path  
-to: to Directory full path  
-sleep: time interva in secounds  
+from:   from Directory full path  
+to:     to Directory full path  
+sleep:  time interva in secounds  
 
