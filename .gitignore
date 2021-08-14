@@ -1,1 +1,4 @@
 /to
+/.vscode
+/__pycache__
+/build
