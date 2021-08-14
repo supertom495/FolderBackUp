@@ -3,16 +3,18 @@ from datetime import datetime
 import time
 import yaml
 
-
-stamp = str(int(time.time()))
-
 with open('./config.yaml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
-fromDirectory = config['from']
-toDirectory = config['to'] + '\\' + stamp
+while(True):
+    stamp = str(int(time.time()))
 
-copy_tree(fromDirectory, toDirectory)
+    fromDirectory = config['from']
+    toDirectory = config['to'] + '\\' + stamp
 
-print("finished: " + stamp)
+    copy_tree(fromDirectory, toDirectory)
+
+    print("finished: " + stamp)
+
+    time.sleep(config['sleep'])
 
