@@ -3,9 +3,11 @@
 #### Can be used for other purpose  
 
 # I use pyinstaller to make a exe, so no python dependency.  
+`pyinstaller --onefile --clean --name FolderBackUp BackUp.py`
 ## Find in dist folder  
 
 ### setting can be changed in config.yaml  
 from: from Directory full path  
 to: to Directory full path  
 sleep: time interva in secounds  
+
